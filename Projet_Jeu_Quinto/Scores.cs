@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet_Jeu_Quinto
 {
-    public partial class Menu : Form
+    public partial class Scores : Form
     {
-        public Menu()
+        public Scores()
         {
             InitializeComponent();
         }

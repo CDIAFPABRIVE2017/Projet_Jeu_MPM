@@ -1,6 +1,6 @@
 ﻿namespace Projet_Jeu_Quinto
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
