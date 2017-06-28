@@ -30,16 +30,22 @@
         {
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbLangues = new System.Windows.Forms.GroupBox();
+            this.gbMusique = new System.Windows.Forms.GroupBox();
+            this.OnM = new System.Windows.Forms.RadioButton();
+            this.OffM = new System.Windows.Forms.RadioButton();
+            this.gbSon = new System.Windows.Forms.GroupBox();
+            this.OnS = new System.Windows.Forms.RadioButton();
+            this.OffS = new System.Windows.Forms.RadioButton();
+            this.gbNbrManches = new System.Windows.Forms.GroupBox();
+            this.btn_2manches = new System.Windows.Forms.Button();
+            this.btn_3manches = new System.Windows.Forms.Button();
+            this.btn_4manches = new System.Windows.Forms.Button();
+            this.btn_5manches = new System.Windows.Forms.Button();
+            this.gbLangues.SuspendLayout();
+            this.gbMusique.SuspendLayout();
+            this.gbSon.SuspendLayout();
+            this.gbNbrManches.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -64,82 +70,131 @@
             this.radioButton2.Text = "English";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbLangues
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(63, 35);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(195, 65);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Langues";
+            this.gbLangues.Controls.Add(this.radioButton1);
+            this.gbLangues.Controls.Add(this.radioButton2);
+            this.gbLangues.Location = new System.Drawing.Point(70, 174);
+            this.gbLangues.Name = "gbLangues";
+            this.gbLangues.Size = new System.Drawing.Size(195, 65);
+            this.gbLangues.TabIndex = 2;
+            this.gbLangues.TabStop = false;
+            this.gbLangues.Text = "Langues";
             // 
-            // groupBox2
+            // gbMusique
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Location = new System.Drawing.Point(63, 106);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(195, 65);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Musique";
+            this.gbMusique.Controls.Add(this.OnM);
+            this.gbMusique.Controls.Add(this.OffM);
+            this.gbMusique.Location = new System.Drawing.Point(70, 245);
+            this.gbMusique.Name = "gbMusique";
+            this.gbMusique.Size = new System.Drawing.Size(195, 65);
+            this.gbMusique.TabIndex = 3;
+            this.gbMusique.TabStop = false;
+            this.gbMusique.Text = "Musique";
             // 
-            // radioButton3
+            // OnM
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 29);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(39, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "On";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.OnM.AutoSize = true;
+            this.OnM.Location = new System.Drawing.Point(6, 29);
+            this.OnM.Name = "OnM";
+            this.OnM.Size = new System.Drawing.Size(39, 17);
+            this.OnM.TabIndex = 0;
+            this.OnM.TabStop = true;
+            this.OnM.Text = "On";
+            this.OnM.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // OffM
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(97, 29);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(39, 17);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Off";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.OffM.AutoSize = true;
+            this.OffM.Location = new System.Drawing.Point(97, 29);
+            this.OffM.Name = "OffM";
+            this.OffM.Size = new System.Drawing.Size(39, 17);
+            this.OffM.TabIndex = 1;
+            this.OffM.TabStop = true;
+            this.OffM.Text = "Off";
+            this.OffM.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // gbSon
             // 
-            this.groupBox3.Controls.Add(this.radioButton5);
-            this.groupBox3.Controls.Add(this.radioButton6);
-            this.groupBox3.Location = new System.Drawing.Point(63, 177);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(195, 65);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Son";
+            this.gbSon.Controls.Add(this.OnS);
+            this.gbSon.Controls.Add(this.OffS);
+            this.gbSon.Location = new System.Drawing.Point(70, 316);
+            this.gbSon.Name = "gbSon";
+            this.gbSon.Size = new System.Drawing.Size(195, 65);
+            this.gbSon.TabIndex = 4;
+            this.gbSon.TabStop = false;
+            this.gbSon.Text = "Son";
             // 
-            // radioButton5
+            // OnS
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 29);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(39, 17);
-            this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "On";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.OnS.AutoSize = true;
+            this.OnS.Location = new System.Drawing.Point(6, 29);
+            this.OnS.Name = "OnS";
+            this.OnS.Size = new System.Drawing.Size(39, 17);
+            this.OnS.TabIndex = 0;
+            this.OnS.TabStop = true;
+            this.OnS.Text = "On";
+            this.OnS.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // OffS
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(97, 29);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(39, 17);
-            this.radioButton6.TabIndex = 1;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Off";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.OffS.AutoSize = true;
+            this.OffS.Location = new System.Drawing.Point(97, 29);
+            this.OffS.Name = "OffS";
+            this.OffS.Size = new System.Drawing.Size(39, 17);
+            this.OffS.TabIndex = 1;
+            this.OffS.TabStop = true;
+            this.OffS.Text = "Off";
+            this.OffS.UseVisualStyleBackColor = true;
+            // 
+            // gbNbrManches
+            // 
+            this.gbNbrManches.Controls.Add(this.btn_5manches);
+            this.gbNbrManches.Controls.Add(this.btn_4manches);
+            this.gbNbrManches.Controls.Add(this.btn_3manches);
+            this.gbNbrManches.Controls.Add(this.btn_2manches);
+            this.gbNbrManches.Location = new System.Drawing.Point(70, 25);
+            this.gbNbrManches.Name = "gbNbrManches";
+            this.gbNbrManches.Size = new System.Drawing.Size(195, 143);
+            this.gbNbrManches.TabIndex = 5;
+            this.gbNbrManches.TabStop = false;
+            this.gbNbrManches.Text = "Nombre de manches";
+            // 
+            // btn_2manches
+            // 
+            this.btn_2manches.Location = new System.Drawing.Point(61, 19);
+            this.btn_2manches.Name = "btn_2manches";
+            this.btn_2manches.Size = new System.Drawing.Size(75, 23);
+            this.btn_2manches.TabIndex = 6;
+            this.btn_2manches.Text = "2 Manches";
+            this.btn_2manches.UseVisualStyleBackColor = true;
+            // 
+            // btn_3manches
+            // 
+            this.btn_3manches.Location = new System.Drawing.Point(61, 48);
+            this.btn_3manches.Name = "btn_3manches";
+            this.btn_3manches.Size = new System.Drawing.Size(75, 23);
+            this.btn_3manches.TabIndex = 7;
+            this.btn_3manches.Text = "3 Manches";
+            this.btn_3manches.UseVisualStyleBackColor = true;
+            // 
+            // btn_4manches
+            // 
+            this.btn_4manches.Location = new System.Drawing.Point(61, 77);
+            this.btn_4manches.Name = "btn_4manches";
+            this.btn_4manches.Size = new System.Drawing.Size(75, 23);
+            this.btn_4manches.TabIndex = 8;
+            this.btn_4manches.Text = "4 Manches";
+            this.btn_4manches.UseVisualStyleBackColor = true;
+            // 
+            // btn_5manches
+            // 
+            this.btn_5manches.Location = new System.Drawing.Point(61, 106);
+            this.btn_5manches.Name = "btn_5manches";
+            this.btn_5manches.Size = new System.Drawing.Size(75, 23);
+            this.btn_5manches.TabIndex = 9;
+            this.btn_5manches.Text = "5 Manches";
+            this.btn_5manches.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
@@ -147,18 +202,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(337, 296);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(337, 430);
+            this.Controls.Add(this.gbNbrManches);
+            this.Controls.Add(this.gbSon);
+            this.Controls.Add(this.gbMusique);
+            this.Controls.Add(this.gbLangues);
             this.Name = "Options";
             this.Text = "Options";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbLangues.ResumeLayout(false);
+            this.gbLangues.PerformLayout();
+            this.gbMusique.ResumeLayout(false);
+            this.gbMusique.PerformLayout();
+            this.gbSon.ResumeLayout(false);
+            this.gbSon.PerformLayout();
+            this.gbNbrManches.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -167,12 +224,17 @@
 
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.GroupBox gbLangues;
+        private System.Windows.Forms.GroupBox gbMusique;
+        private System.Windows.Forms.RadioButton OnM;
+        private System.Windows.Forms.RadioButton OffM;
+        private System.Windows.Forms.GroupBox gbSon;
+        private System.Windows.Forms.RadioButton OnS;
+        private System.Windows.Forms.RadioButton OffS;
+        private System.Windows.Forms.GroupBox gbNbrManches;
+        private System.Windows.Forms.Button btn_5manches;
+        private System.Windows.Forms.Button btn_4manches;
+        private System.Windows.Forms.Button btn_3manches;
+        private System.Windows.Forms.Button btn_2manches;
     }
 }
