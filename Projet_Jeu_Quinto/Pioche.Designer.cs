@@ -30,8 +30,8 @@
         {
             this.txtPioche = new System.Windows.Forms.TextBox();
             this.ajPioche = new System.Windows.Forms.Button();
-            this.MotsRetirés = new System.Windows.Forms.ListBox();
-            this.MotsValidés = new System.Windows.Forms.ListBox();
+            this.motsRetirés = new System.Windows.Forms.ListBox();
+            this.listePioche = new System.Windows.Forms.ListBox();
             this.RetPioche = new System.Windows.Forms.Button();
             this.txtPioche2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -52,21 +52,21 @@
             this.ajPioche.Text = "Ajouter";
             this.ajPioche.UseVisualStyleBackColor = true;
             // 
-            // MotsRetirés
+            // motsRetirés
             // 
-            this.MotsRetirés.FormattingEnabled = true;
-            this.MotsRetirés.Location = new System.Drawing.Point(98, 60);
-            this.MotsRetirés.Name = "MotsRetirés";
-            this.MotsRetirés.Size = new System.Drawing.Size(197, 329);
-            this.MotsRetirés.TabIndex = 2;
+            this.motsRetirés.FormattingEnabled = true;
+            this.motsRetirés.Location = new System.Drawing.Point(98, 60);
+            this.motsRetirés.Name = "motsRetirés";
+            this.motsRetirés.Size = new System.Drawing.Size(197, 329);
+            this.motsRetirés.TabIndex = 2;
             // 
-            // MotsValidés
+            // listePioche
             // 
-            this.MotsValidés.FormattingEnabled = true;
-            this.MotsValidés.Location = new System.Drawing.Point(500, 60);
-            this.MotsValidés.Name = "MotsValidés";
-            this.MotsValidés.Size = new System.Drawing.Size(197, 329);
-            this.MotsValidés.TabIndex = 3;
+            this.listePioche.FormattingEnabled = true;
+            this.listePioche.Location = new System.Drawing.Point(500, 60);
+            this.listePioche.Name = "listePioche";
+            this.listePioche.Size = new System.Drawing.Size(197, 329);
+            this.listePioche.TabIndex = 3;
             // 
             // RetPioche
             // 
@@ -91,8 +91,8 @@
             this.ClientSize = new System.Drawing.Size(794, 460);
             this.Controls.Add(this.RetPioche);
             this.Controls.Add(this.txtPioche2);
-            this.Controls.Add(this.MotsValidés);
-            this.Controls.Add(this.MotsRetirés);
+            this.Controls.Add(this.listePioche);
+            this.Controls.Add(this.motsRetirés);
             this.Controls.Add(this.ajPioche);
             this.Controls.Add(this.txtPioche);
             this.Name = "Pioche";
@@ -106,8 +106,8 @@
 
         private System.Windows.Forms.TextBox txtPioche;
         private System.Windows.Forms.Button ajPioche;
-        private System.Windows.Forms.ListBox MotsRetirés;
-        private System.Windows.Forms.ListBox MotsValidés;
+        private System.Windows.Forms.ListBox motsRetirés;
+        private System.Windows.Forms.ListBox listePioche;
         private System.Windows.Forms.Button RetPioche;
         private System.Windows.Forms.TextBox txtPioche2;
     }
